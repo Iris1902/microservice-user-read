@@ -30,4 +30,41 @@ public class User extends PanacheEntity {
     public enum Role {
         CUSTOMER, ADMIN, PROVIDER
     }
+
+    // Getters para serialización JSON
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public boolean getIsActive() {
+        return isActive;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
