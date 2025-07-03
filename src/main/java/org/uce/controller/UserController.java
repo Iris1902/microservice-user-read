@@ -44,4 +44,10 @@ public class UserController {
         }
         return Response.status(Response.Status.BAD_REQUEST).entity("Debe proporcionar email o username").build();
     }
+
+    @GET
+    @Path("/health")
+    public Response healthCheck() {
+        return Response.ok("Service is up and running").build();
+    }
 }
