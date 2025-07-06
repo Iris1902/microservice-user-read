@@ -6,7 +6,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/api/users")
+@Path("/api/users-read")
 @Produces(MediaType.APPLICATION_JSON)
 public class UserController {
 
